@@ -7,7 +7,7 @@ IN = 6666
 OUT = 6668
 
 #function to print UDP packets from the cRio
-def receive
+def receiveData
 	listener = UDPSocket.new
 	listener.bind(nil, IN)
 	while true do 
@@ -15,7 +15,7 @@ def receive
 	end
 end
 #function to send UDP 
-def send
+def sendData
 	sender = UDPSocket.new
 	while true do
 		input = gets.chomp
@@ -24,8 +24,8 @@ def send
 	end
 end
 
-t1 = Thread.new {receive}
-t2 = Thread.new {send}
+t1 = Thread.new {receiveData}
+t2 = Thread.new {sendData}
 
 t1.join
 t2.join
