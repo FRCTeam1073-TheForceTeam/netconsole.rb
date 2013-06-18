@@ -18,8 +18,7 @@ end
 def sendData
 	sender = UDPSocket.new
 	while true do
-		input = gets.chomp
-		input << "\r\n"
+		input = gets.chompn << "\r\n"
 		sender.send(input, 0, teamIP, OUT)
 	end
 end
