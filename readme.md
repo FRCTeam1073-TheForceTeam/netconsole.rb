@@ -13,15 +13,15 @@ Read the **brief** documentation below to get started
 
 
 ##Configuration
-Set the variable `TEAM` to your team number
+Set the variable `TEAM` to your FRC team number.
 
-Like this
+It looks like this
 
 ```
 TEAM = 1073
 ```
 
-It should be four digits, if you're less than 4 digits, prefix your number with zeroes. Team 161 would look like this
+Also, it should be four digits, if you're less than 4 digits, prefix your number with zeroes. Team 161 would look like this
 
 ```
 TEAM = 0161
